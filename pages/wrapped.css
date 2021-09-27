@@ -1,0 +1,84 @@
+body{
+    
+    color:rgb(30, 215, 96);
+    text-align: center;
+    height:100vh;
+    margin: 0px;
+
+
+
+    background-color: rgb(255,255,255);
+    
+}
+
+.content{
+
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
+
+.submitLabels{
+  font-size:150%;
+  text-align:left; 
+  float:left;
+}
+
+.submitButtons{
+ font-size:150%;
+  border: none; 
+  border-bottom: 2px solid red;
+  float:left;
+}
+
+
+#header{
+  box-sizing: border-box;
+  background-color: rgb(25,20,20);
+  text-align: left;
+  padding: 5px 160px;
+  position: fixed;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  
+  
+}
+
+button {
+  margin-top: 75px;
+    background-color: rgb(29, 185, 84); /* Green */
+    border: 2px solid;
+    border-radius: 2px;
+    color: rgb(7, 6, 6);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+button:hover {background: #eee;}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.dabbutton {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+/* On mouse-over */
+.btn:hover {background: #eee;}
+

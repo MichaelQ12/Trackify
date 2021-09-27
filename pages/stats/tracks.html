@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Testing</title>
+
+    <link href="/pages/base.css" rel="stylesheet" />
+    <link href="tracks.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="content" class="contentHide">
+
+
+        <div id="navigationContainer" class="navContainer">
+            <nav id="navigationBar" class="navBar">
+                <a class="navHead" id="titleHeader" href="/pages/wrapped.html">Spotify Testing </a>
+
+                <ul id="navLinks">
+                    <li><a class="navLinks" href="tracks.html">Tracks</a></li>
+                    <li><a class="navLinks" href="artists.html">Artists</a></li>
+                    <li><a class="navLinks" href="recent.html">Recently Played</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div id="topTracksBackground">
+            <div id="topTracksNavigation">
+            <button id="leftNav" class="navBtn left"></button>
+            <span id="topTracksHeaderText" class="headerText">
+                <h1 id="top_TracksHeader">Top 3 Tracks</h1>
+                <p id="top_TracksTimeRange">Of Your Last 4 Weeks</p>
+                <hr>
+            </span>
+            <button id="rightNav" class="navBtn right"></button>
+            <br>
+        </div>
+        <div id="top3Tracks">
+            <div id="topTracks1">
+                <span id="topTrack1Container">
+                    <span id="topTrack1" class="first song">
+                        <p class="nomargin">1</p>
+                        <hr class="first">
+
+                        <div id="topTrack1TextDiv" class="noOverflow">
+                            <span>
+                                <p id="top_TrackSong1" class="slideStyleTrack">Top Track</p>
+                            </span>
+                            <hr class="first">
+                            <span>
+                                <p id="top_TrackArtist1" class="slideStyleArtist">Artist</p>
+                            </span>
+                        </div>
+
+                    </span>
+                    <span id="topTrack1ToolTipContainer" class="toolTipContainer container1">
+                        <span class="tooltiparrow-left tooltiparrow1"></span>
+                        <span id="topTrack1ToolTip" class="first noOverflow topTracksToolTip">
+                            <table id="top_3TracksTable1">
+
+
+
+                            </table>
+                        </span>
+                    </span>
+                </span>
+            </div>
+
+
+            </span>
+
+            <div id="topTracksOther" class="centreAlign">
+                <span id="topTrack2Container">
+                    <span id="topTrack2" class="second song">
+                        <p class="nomargin">2</p>
+                        <hr class="second">
+
+                        <div id="topTrack2TextDiv" class="noOverflow">
+                            <span>
+                                <p id="top_TrackSong2" class="slideStyleTrack">Top Track</p>
+                            </span>
+                            <hr class="second">
+                            <span>
+                                <p id="top_TrackArtist2" class="slideStyleArtist">Artist</p>
+                            </span>
+                        </div>
+                    </span>
+                    <span id="topTrack2ToolTipContainer" class="toolTipContainer containerOther">
+                        <span class="tooltiparrow-left tooltiparrow2"></span>
+                        <span id="topTrack2ToolTip" class="second noOverflow topTracksToolTip">
+                            <table id="top_3TracksTable2">
+
+
+
+                            </table>
+
+                        </span>
+                    </span>
+                </span>
+                <span id="topTrack3Container">
+
+                    <span id="topTrack3" class="third song">
+                        <p class="nomargin">3</p>
+                        <hr class="third">
+
+                        <div id="topTrack3TextDiv" class="noOverflow">
+                            <span>
+                                <p id="top_TrackSong3" class="slideStyleTrack">Top Track</p>
+                            </span>
+                            <hr class="third">
+                            <span>
+                                <p id="top_TrackArtist3" class="slideStyleArtist">Artist</p>
+                            </span>
+
+                        </div>
+                    </span>
+                    <span id="topTrack3ToolTipContainer" class="toolTipContainer containerOther">
+                        <span class="tooltiparrow-left tooltiparrow3"></span>
+                        <span id="topTrack3ToolTip" class="third noOverflow topTracksToolTip">
+                            <table id="top_3TracksTable3">
+
+
+
+                            </table>
+
+                        </span>
+                    </span>
+                </span>
+
+
+            </div>
+        </div>
+        </div>
+
+        <div id="top_TracksTableBackground">
+            <div id="top_TracksTableDiv" class="centreAlign">
+                <span id="top50HeaderText" class="headerText">
+                    <h2 id="top_50TableHeader">Top 50 Tracks</h2>
+                    <p id="top_50TableInfo">For The Last 4 Weeks</p>
+                    <hr>
+                </span>
+                <table id="top_TracksTable" class="baseTable">
+
+                    <tr id="top_TracksTableHeaders" class="tableHeaders">
+                        <th></th>
+                        <th></th>
+                        <th>Track</th>
+                        <th>Artist</th>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div id="bottomDiv" class="footerDiv">
+
+            <h3 id="titleBottom">Spotify Testing </h3>
+        </div>
+
+    </div>
+
+
+    <script src="tracks.js"></script>
+
+</body>
+
+</html>

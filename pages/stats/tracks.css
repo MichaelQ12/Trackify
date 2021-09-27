@@ -1,0 +1,298 @@
+
+.top3TracksIMG{
+  cursor: pointer;
+  margin-top: 5%;
+  border:2px solid;
+  width: 128px;
+  height: 128px;
+  
+}
+
+.top3TracksIMG:hover{
+  background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+
+}
+
+
+#topTrack1{
+  
+  margin-bottom: 5%;
+}
+#topTrack2,#topTrack3{
+  margin-bottom: 10%;
+
+}
+
+#topTracksNavigation, #topTracksTableDiv, #topTracks1, #topTracksOther{
+
+    
+    animation: fadeIn linear 0.5s;
+    -webkit-animation: fadeIn linear 0.5s;
+    -moz-animation: fadeIn linear 0.5s;
+    -o-animation: fadeIn linear 0.5s;
+    -ms-animation: fadeIn linear 0.5s;
+  
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;
+    transform: translateY(-15%);}
+  100% {opacity:1;
+    transform: translateY(0%);}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;
+    transform: translateY(-15%);}
+  100% {opacity:1;
+    transform: translateY(0%);}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;
+    transform: translateY(-15%);}
+  100% {opacity:1;
+    transform: translateY(0%);}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;
+    transform: translateY(-15%);}
+  100% {opacity:1;
+    transform: translateY(0%);}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;
+    transform: translateY(-15%);}
+  100% {opacity:1;
+    transform: translateY(0%);}
+}
+
+
+
+.slideStyleTrack, .slideStyleArtist{
+  max-height: 18px;
+  display:inline-block;
+  transition: transform 1s linear 0s;
+  
+}
+
+
+.slideTrack:hover .slideStyleTrack,.slideArtist:hover .slideStyleArtist{
+ 
+  
+  animation: marquee 3s linear forwards;
+
+}
+
+@keyframes marquee {
+  0% { left: 0%; }
+  100% {   transform:translateX(calc(-100% + 132px)); }/**
+  * white space required between operator for calc function to work corectly
+  */
+}
+
+
+
+
+.song{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 296.594px;
+ width:132px;
+ margin-top: 5%;/**
+ * padding 5% produces larger padding on first song bc parent div of first song is larger than others
+ */
+  padding: 5%;
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  
+}
+
+.slideRightPart1{
+  animation:  slideInRight1 0.50s linear forwards;
+}
+.slideLeftPart1{
+  animation:  slideInLeft1 0.50s linear forwards;
+}
+
+@keyframes slideInRight1 {
+  0%{transform: translateX(0%);
+
+  }
+ 
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideInLeft1 {
+  0%{transform: translateX(0%);
+
+  }
+ 
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slideRightPart2{
+  
+  animation: slideInRight2 0.50s linear forwards;
+}
+.slideLeftPart2{
+  
+  animation: slideInLeft2 0.50s linear forwards;
+}
+
+
+@keyframes slideInRight2 {
+  0%{
+    transform: translateX(-100%);
+    
+  }
+ 
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInLeft2 {
+  0%{
+    transform: translateX(100%);
+    
+  }
+ 
+  100% {
+    transform: translateX(0%);
+  }
+}
+.topTracksToolTip{
+
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 90%;
+  width: 208px;
+  padding: 5%;
+  box-shadow:4px 8px;
+  background-color:black;
+  display: inline-block;
+  
+}
+.song:hover +.toolTipContainer{              /**  to have a hovered element affect another element, 
+                                                  affected element must be child or later-sibling/decendant(appears in the mark-up/DOM after hovered element)
+                                                  if affected element is not a child but is a later sibling, + or ~ must be added like here (+ for immediate sibling, ~ for subsequent)
+                                              */
+  visibility: visible;
+  animation: toolTipFade 0.4s linear forwards;
+  animation-delay: 0.6s;
+}
+
+.song:hover{
+  animation: trackPop 0.4s linear forwards;
+  
+}
+@keyframes toolTipFade{
+  100%  {opacity: 1;
+   }
+}
+
+@keyframes trackPop{
+  100%  {transform: scale(1.05);
+    box-shadow:4px 8px;}
+}
+
+.toolTipContainer{
+  position: absolute;
+  visibility: hidden;
+  opacity:0;
+}
+
+.container1{
+  margin-top: 5%;
+  margin-left:2%;
+}
+.containerOther{
+  margin-top: 22%;
+  margin-left: 10%;
+}
+
+
+#topTrack3Container{
+  position: relative;
+ 
+  left: 20%;
+}
+#topTrack2Container{
+  position: relative;
+  right: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  #topTrack3Container{
+    position: relative;
+    display: block;
+    left: 0%;
+  }
+  #topTrack2Container{
+    position: relative;
+    display: block;
+    right: 0%;
+  }
+}
+
+
+
+
+
+ 
+
+.tooltiparrow-left {
+  position: absolute;
+  right:100%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  
+}
+
+.tooltiparrow1{
+  border-right: 10px solid gold;
+}
+.tooltiparrow2{
+  border-right: 10px solid silver;
+}
+.tooltiparrow3{
+  border-right: 10px solid rgb(205, 127, 50); 
+}
+
+
+#topTracksBackground{
+ 
+  background-image: linear-gradient(
+    170deg
+    , #8ABAD3FF 20%, #BC70A4 50%);
+}
+#top_TracksTableBackground{
+  
+      background-image: linear-gradient(
+        180deg
+        , #BC70A4 5%, white 55%);
+}
+
+
+
+ 
+
+#titleBottom{
+
+  margin-top: 5%;
+  margin-bottom: 2%;
+    
+    text-align: center;
+    display: inline-block;
+    
+    
+}
